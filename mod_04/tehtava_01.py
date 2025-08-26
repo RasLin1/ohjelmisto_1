@@ -7,5 +7,7 @@ while counter < 1000:
         counter += 1
     else:
         counter += 1
+else:
+    print()
 
 print(f"Kolmella jaettavat numerot: {number_list}")
