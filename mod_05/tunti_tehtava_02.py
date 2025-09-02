@@ -1,3 +1,5 @@
+#Ymmärsin tehtävän väärin :(
+
 num_list = []
 
 valid_number = False
