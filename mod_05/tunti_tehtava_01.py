@@ -11,6 +11,7 @@ while allow_number_list == True:
             print("Älä anna negatiivista numeroa!")
     elif len(numbers) >= 10:
         allow_number_list = False
+        numbers.sort()
         for x in numbers:
             print(x)
             
