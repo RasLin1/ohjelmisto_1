@@ -7,9 +7,9 @@ while add_number == True:
     if temp_holder > 0:
         num_list.append(temp_holder)
     elif temp_holder <= 0:
-        odd_num_list = []
+        even_num_list = []
         for x in num_list:
-            if x % 2 == 1:
-                odd_num_list.append(x)
-        for x in odd_num_list:
+            if x % 2 == 0:
+                even_num_list.append(x)
+        for x in even_num_list:
             print(x)
