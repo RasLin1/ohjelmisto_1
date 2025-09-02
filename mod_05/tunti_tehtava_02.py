@@ -1,9 +1,10 @@
 num_list = []
 
-add_number = True
+valid_number = False
 
-temp_holder = int(input("Anna numero: "))
+temp_holder = int(input("Anna positivinen kokonaisluku: "))
 if temp_holder > 0:
+    valid_number = True
     for x in range(temp_holder + 1):
         counter = 1
         if x % 2 == 0:
@@ -11,5 +12,9 @@ if temp_holder > 0:
             counter = counter + 1
         else:
             counter = counter + 1
-for x in num_list:
-    print(x)
+
+if valid_number:
+    for x in num_list:
+        print(x)
+else:
+    print("Huono numero!")
