@@ -16,7 +16,6 @@ while counter < 2:
     temp_width = float(input("Mikä on pizzan halkaisija? "))
     temp_price = float(input("Mikä on pizzan hinta? "))
     pizza_area = pizza_value_calc(temp_width, temp_price)
-    print(f"{temp_width}, {temp_price}, {pizza_area}")
     temp_list.append(pizza_area)
     temp_list.append(counter + 1)
     pizza_areas.append(temp_list)
