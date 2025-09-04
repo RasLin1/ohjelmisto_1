@@ -1,9 +1,8 @@
 import math
 
 def pizza_value_calc(width, price):
-    area = (3.14*((width/100)/2)**2)
-    area_price = (price/area)
-    return area_price
+    worth = (price/(3.14*((width/100)/2)**2))
+    return worth
 
 def decimal_rounder(number):
     number_rounded = "%.2f" % number
