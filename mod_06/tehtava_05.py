@@ -16,5 +16,5 @@ def odd_even_separator(num_list, desired_return):
     else:
         return "Error: desired return is invalid"
 
-seperator_return = odd_even_separator(num_list, 1)
-print(seperator_return)
+seperator_return = odd_even_separator(num_list, 0)
+print(f"Alkuperäinen lista oli {num_list} ja karsittu lista oli {seperator_return}")
