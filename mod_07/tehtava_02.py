@@ -8,7 +8,7 @@ def name_checker(name):
     return False
 
 
-while allow_name_asker == True:
+while allow_name_asker:
     temp_name_holder = input("Anna nimi: ")
     name_exists = name_checker(temp_name_holder)
     if temp_name_holder == "":
@@ -18,6 +18,6 @@ while allow_name_asker == True:
     elif name_exists == False:
         print("Uusi nimi")
         names.add(temp_name_holder)
-    elif name_exists == True:
+    elif name_exists:
         print("Aiemmin syötetty nimi")
         names.add(temp_name_holder)

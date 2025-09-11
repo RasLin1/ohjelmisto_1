@@ -1,7 +1,6 @@
 seasons = ('talvi', 'kevät', 'kesä', 'syksy')
 
 def season_checker(season_number):
-    current_season = ''
     if season_number in (1, 2, 12):
         return seasons[0]
     elif season_number in (3, 4, 5):
