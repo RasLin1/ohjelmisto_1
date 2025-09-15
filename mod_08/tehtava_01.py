@@ -26,4 +26,5 @@ def search_airport(icao):
     return True
 
 search_keyword = input("Anna lentokentän ICAO koodi: ")
-search = search_airport(search_keyword)
+search_normalised = search_keyword.upper()
+search = search_airport(search_normalised)
