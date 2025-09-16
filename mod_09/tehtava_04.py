@@ -21,6 +21,7 @@ counter = 0
 auto_maara = 10
 allow_race  =  True
 autot = []
+voittaja = ""
 
 while allow_race:
     if counter < auto_maara:
@@ -37,9 +38,18 @@ while allow_race:
                 x.kiihdyta(kiihtymis_maara)
                 x.kulje(1)
                 print(f"{x.rekisteritunnus} on kulkenut {x.kuljettu_matka}")
-            elif x.kuljettu_matka >= 10000:
-                print(f"{x.rekisteritunnus} voitti!!")
-                allow_race = False
+                if x.kuljettu_matka > 10000:
+                    voittaja = x.rekisteritunnus
+                    allow_race = False
         
+if allow_race == False:
+    print(f"{voittaja} voitti!")
+    print("---------------------------------------")
+    for x in autot:
+        print(f"Rekisteritunnus: {x.rekisteritunnus}")
+        print(f"Huippunopeus: {x.huippunopeus}")
+        print(f"Nopeus lopussa: {x.nopeus}")
+        print(f"Kuljettu matka: {x.kuljettu_matka}")
+        print("---------------------------------------")
 
     
